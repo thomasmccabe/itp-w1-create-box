@@ -3,9 +3,9 @@
 
 def create_box(height, width, character):
     
-    if height <= 1:
+    if height < 1:
         return "invalid height"
-    if width <= 1:
+    if width < 1:
         return "invalid width"
     i = 0
     answer = ''
@@ -35,7 +35,7 @@ def create_external_box(height, width, character):
         x += 1
         if x == height:
           answer += character * width
-    print answer
+    print(answer)
     
 """ 
 ########
